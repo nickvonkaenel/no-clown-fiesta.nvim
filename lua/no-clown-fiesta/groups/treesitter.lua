@@ -66,7 +66,7 @@ function M.highlight(palette, opts)
     ["@punctuation.bracket"] = { fg = palette.white },
     ["@punctuation.delimiter"] = { fg = palette.white },
     ["@string"] = { fg = palette.medium_gray_blue },
-    ["@string.escape"] = { fg = palette.medium_gray_blue },
+    ["@string.escape"] = { fg = palette.purple },
     ["@string.regexp"] = { fg = palette.medium_gray_blue },
     ["@string.special.path"] = { fg = palette.light_gray },
     ["@string.special.symbol"] = { fg = palette.medium_gray },

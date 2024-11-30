@@ -5,6 +5,7 @@ return {
   require "no-clown-fiesta.groups.git",
   require "no-clown-fiesta.groups.highlights",
   require "no-clown-fiesta.groups.hop",
+  require "no-clown-fiesta.groups.indent-line",
   require "no-clown-fiesta.groups.lazy",
   require "no-clown-fiesta.groups.leap",
   require "no-clown-fiesta.groups.lir",
