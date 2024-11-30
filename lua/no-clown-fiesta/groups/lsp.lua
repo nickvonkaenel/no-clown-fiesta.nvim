@@ -15,22 +15,22 @@ function M.highlight(palette, opts)
     DiagnosticVirtualTextHint = { fg = palette.hint },
     DiagnosticUnderlineError = vim.tbl_extend(
       "force",
-      { sp = palette.error },
+      { sp = palette.error, undercurl = true },
       opts.styles.lsp
     ),
     DiagnosticUnderlineWarn = vim.tbl_extend(
       "force",
-      { sp = palette.warning },
+      { sp = palette.warning, undercurl = true },
       opts.styles.lsp
     ),
     DiagnosticUnderlineInfo = vim.tbl_extend(
       "force",
-      { sp = palette.info },
+      { sp = palette.info, undercurl = true },
       opts.styles.lsp
     ),
     DiagnosticUnderlineHint = vim.tbl_extend(
       "force",
-      { sp = palette.hint },
+      { sp = palette.hint, undercurl = true },
       opts.styles.lsp
     ),
     LspSignatureActiveParameter = { bg = palette.alt_bg, bold = true },

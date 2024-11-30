@@ -145,7 +145,7 @@ function M.highlight(palette, opts)
       bg = bg,
     },
     DiagnosticFloatingError = { fg = palette.error },
-    FloatBorder = { fg = palette.light_gray },
+    FloatBorder = { fg = palette.border_light },
   }
 end
 
