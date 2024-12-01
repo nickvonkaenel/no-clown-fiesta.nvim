@@ -22,9 +22,13 @@ function M.highlight(palette, opts)
       fg = palette.fg,
       bg = bg,
     },
-    Pmenu = { fg = palette.border_accent, bg = palette.accent },
-    PmenuSel = { bg = palette.blue, fg = palette.gray, reverse = true },
-    PmenuMatchSel = { bg = palette.yellow, fg = palette.gray, reverse = true },
+    Pmenu = { fg = palette.border_accent, bg = bg },
+    PmenuSel = { bg = palette.border_highlight, fg = palette.white, reverse = true },
+    PmenuMatchSel = {
+      bg = palette.yellow,
+      fg = palette.border_highlight,
+      reverse = true,
+    },
     WildMenu = { fg = palette.blue, bg = palette.alt_bg },
     CursorLineNr = {
       fg = palette.light_gray,
@@ -48,7 +52,7 @@ function M.highlight(palette, opts)
     NormalFloat = {
       bg = opts.transparent and palette.none or palette.alt_bg,
     },
-    Visual = { bg = palette.gray },
+    Visual = { bg = palette.border_highlight }, -- Visual mode selection, cmp menu
     VisualNOS = { bg = palette.alt_bg },
     WarningMsg = { fg = palette.error, bg = palette.bg },
     DiffAdd = { bg = palette.accent_green },

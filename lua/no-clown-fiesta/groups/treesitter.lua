@@ -28,6 +28,7 @@ function M.highlight(palette, opts)
       opts.styles.functions
     ),
     ["@function.builtin"] = { fg = palette.cyan },
+    ["@function.call"] = { fg = palette.cyan },
     ["@function.macro"] = { fg = palette.cyan },
     ["@function.method"] = { fg = palette.cyan },
     ["@function.method.call"] = { fg = palette.cyan },
@@ -48,7 +49,6 @@ function M.highlight(palette, opts)
     ["@keyword.operator"] = { fg = palette.gray_blue },
     ["@keyword.repeat"] = { fg = palette.gray_blue },
     ["@label"] = { fg = palette.white },
-    ["@lsp.type.comment"] = {},
     ["@markup"] = { fg = palette.fg },
     ["@markup.italic"] = { italic = true },
     ["@markup.link"] = { fg = palette.medium_gray_blue },
@@ -59,6 +59,7 @@ function M.highlight(palette, opts)
     ["@markup.title"] = { fg = palette.medium_gray },
     ["@markup.underline"] = { underline = true },
     ["@module"] = { fg = palette.white },
+    ["@module.builtin"] = { fg = palette.white },
     ["@number"] = { fg = palette.red },
     ["@number.float"] = { fg = palette.red },
     ["@operator"] = { fg = palette.white },
@@ -66,7 +67,7 @@ function M.highlight(palette, opts)
     ["@punctuation.bracket"] = { fg = palette.white },
     ["@punctuation.delimiter"] = { fg = palette.white },
     ["@string"] = { fg = palette.medium_gray_blue },
-    ["@string.escape"] = { fg = palette.purple },
+    ["@string.escape"] = { fg = palette.beige },
     ["@string.regexp"] = { fg = palette.medium_gray_blue },
     ["@string.special.path"] = { fg = palette.light_gray },
     ["@string.special.symbol"] = { fg = palette.medium_gray },
@@ -74,8 +75,8 @@ function M.highlight(palette, opts)
     ["@tag.attribute"] = { fg = palette.white },
     ["@tag.delimiter"] = { fg = palette.white },
     ["@text.uri"] = { fg = palette.light_gray },
-    ["@type"] = vim.tbl_extend("force", { fg = palette.white }, opts.styles.type),
-    ["@type.builtin"] = { fg = palette.white },
+    ["@type"] = vim.tbl_extend("force", { fg = palette.lavender }, opts.styles.type),
+    ["@type.builtin"] = { fg = palette.lavender },
     ["@variable"] = vim.tbl_extend(
       "force",
       { fg = palette.white },
@@ -83,8 +84,10 @@ function M.highlight(palette, opts)
     ),
     ["@variable.builtin"] = { fg = palette.white },
     ["@variable.field"] = { fg = palette.white },
-    ["@variable.parameter"] = { fg = palette.white },
+    ["@variable.parameter"] = { fg = palette.white, italic = true },
     ["@variable.parameter.reference"] = { fg = palette.white },
+    ["@lsp.type.comment"] = {},
+    ["@lsp.type.variable.cpp"] = {}, -- incorrectly highlights sometimes so just letting treesitter handle it
   }
 end
 

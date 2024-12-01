@@ -7,12 +7,13 @@ function M.highlight(palette, opts)
       fg = palette.border_accent,
       bg = bg,
     },
-    TelescopeSelection = { fg = palette.fg, bg = palette.accent },
+    TelescopeSelection = { fg = palette.fg, bg = palette.border_highlight },
     TelescopeMatching = { fg = palette.orange, bold = true },
     TelescopeBorder = {
       fg = palette.border_light,
       bg = bg,
     },
+    TelescopePreviewDirectory = { bold = true, italic = true }, -- not sure if needed
   }
 end
 
