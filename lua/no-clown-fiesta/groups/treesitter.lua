@@ -82,12 +82,12 @@ function M.highlight(palette, opts)
       { fg = palette.white },
       opts.styles.variables
     ),
-    ["@variable.builtin"] = { fg = palette.white },
+    ["@variable.builtin"] = { fg = palette.beige },
     ["@variable.field"] = { fg = palette.white },
     ["@variable.parameter"] = { fg = palette.white, italic = true },
     ["@variable.parameter.reference"] = { fg = palette.white },
     ["@lsp.type.comment"] = {},
-    ["@lsp.type.variable.cpp"] = {}, -- incorrectly highlights sometimes so just letting treesitter handle it
+    ["@lsp.type.variable"] = {}, -- incorrectly highlights sometimes so just letting treesitter handle it
   }
 end
 
