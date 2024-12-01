@@ -99,7 +99,7 @@ function M.highlight(palette, opts)
     MoreMsg = { fg = palette.cyan },
     Question = { fg = palette.cyan },
     EndOfBuffer = { fg = palette.gray },
-    NonText = { fg = palette.border_accent }, -- arrows, borders, etc
+    NonText = { fg = palette.fg }, -- arrows, borders, etc
     Variable = vim.tbl_extend("force", { fg = palette.white }, opts.styles.variables),
     String = { fg = palette.medium_gray_blue },
     Character = { fg = palette.green },
