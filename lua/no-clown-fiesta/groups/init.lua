@@ -18,6 +18,7 @@ return {
   require "no-clown-fiesta.groups.noice",
   require "no-clown-fiesta.groups.nvim-cmp",
   require "no-clown-fiesta.groups.nvim-notify",
+  require "no-clown-fiesta.groups.blink",
   require "no-clown-fiesta.groups.nvim-tree",
   require "no-clown-fiesta.groups.orgmode",
   require "no-clown-fiesta.groups.statusline",
