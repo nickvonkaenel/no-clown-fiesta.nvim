@@ -23,7 +23,7 @@ function M.highlight(palette, opts)
       bg = bg,
     },
     Pmenu = { fg = palette.border_accent, bg = bg },
-    PmenuSel = { bg = palette.border_highlight, fg = palette.white, reverse = true },
+    PmenuSel = { bg = palette.border_highlight, fg = palette.white },
     PmenuMatchSel = {
       bg = palette.yellow,
       fg = palette.border_highlight,
