@@ -21,6 +21,7 @@ return {
   require "no-clown-fiesta.groups.blink",
   require "no-clown-fiesta.groups.nvim-tree",
   require "no-clown-fiesta.groups.orgmode",
+  require "no-clown-fiesta.groups.snacks",
   require "no-clown-fiesta.groups.statusline",
   require "no-clown-fiesta.groups.telescope",
   require "no-clown-fiesta.groups.treesitter",
