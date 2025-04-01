@@ -54,6 +54,7 @@ function M.highlight(palette, opts)
     },
     Visual = { bg = palette.border_highlight }, -- Visual mode selection, cmp menu
     VisualNOS = { bg = palette.alt_bg },
+    VisualNonText = { fg = palette.border_light, bg = palette.border_highlight }, -- visual-whitespace plug-in
     WarningMsg = { fg = palette.error, bg = palette.bg },
     DiffAdd = { bg = palette.accent_green },
     DiffText = { bg = palette.accent_blue },
