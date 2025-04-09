@@ -1,6 +1,6 @@
 local colors = {
   none = "NONE",
-  fg = "#E1E1E1",
+  fg = "#D1D1D1",
   bg = "#151515",
   alt_bg = "#171717",
   accent = "#2a2e33",
@@ -11,7 +11,7 @@ local colors = {
   border_dark = "#383c44",
   border_window = "#2a2e33",
 
-  white = "#E1E1E1",
+  white = "#D1D1D1",
   gray = "#373737",
   medium_gray = "#727272",
   light_gray = "#AFAFAF",

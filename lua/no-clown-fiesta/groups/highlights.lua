@@ -103,6 +103,7 @@ function M.highlight(palette, opts)
     NonText = { fg = palette.medium_gray }, -- arrows, borders, etc
     Variable = vim.tbl_extend("force", { fg = palette.white }, opts.styles.variables),
     String = { fg = palette.medium_gray_blue },
+    ["@string.lua"] = { fg = palette.medium_gray_blue, italic = true },
     Character = { fg = palette.green },
     Constant = { fg = palette.white },
     Number = { fg = palette.red },
