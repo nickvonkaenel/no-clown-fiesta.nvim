@@ -2,7 +2,7 @@ local colors = {
   none = "NONE",
   fg = "#D1D1D1",
   bg = "#151515",
-  alt_bg = "#171717",
+  alt_bg = "#1a1e22",
   accent = "#2a2e33",
 
   border_highlight = "#3a3d45",
