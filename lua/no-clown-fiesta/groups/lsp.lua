@@ -30,7 +30,7 @@ function M.highlight(palette, opts)
     ),
     DiagnosticUnderlineHint = vim.tbl_extend(
       "force",
-      { sp = palette.hint, undercurl = true },
+      { sp = palette.hint, undercurl = false },
       opts.styles.lsp
     ),
     LspSignatureActiveParameter = { bg = palette.alt_bg, bold = true },
